@@ -1,4 +1,4 @@
-# TestMining
+# TextMining
 TestMining is a Python library for text mining and sentiment analysis in Python. It is built on top of the amazing scikit-learn library and is designed to be easy to use and easy to extend.
 ## Installation
 Before proceeding with the installation, make sure you have cloned the repository using the following command:
@@ -15,7 +15,7 @@ Once the repository is cloned, follow these steps for installation:
 3. After installation, activate the environment using:
 
 ```
-conda activate testmining
+conda activate textmining
 ```
 ## Commands
 - `train` - Trains a machine learning model using the provided dataset and saves it to a file.
