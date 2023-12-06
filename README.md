@@ -3,7 +3,7 @@ TextMining is a Python library for text mining and sentiment analysis in Python.
 ## Installation
 Before proceeding with the installation, make sure you have cloned the repository using the following command:
 ```
-git clone https://github.com/MaxLupey/TextMining.git
+git clone https://github.com/MaxLupey/TMining.git
 ```
 > [!NOTE]
 > **For proper operation of the application, [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html) must be installed in the default path.**
