@@ -1,5 +1,5 @@
 # TextMining
-TestMining is a Python library for text mining and sentiment analysis in Python. It is built on top of the amazing scikit-learn library and is designed to be easy to use and easy to extend.
+TextMining is a Python library for text mining and sentiment analysis in Python. It is built on top of the amazing scikit-learn library and is designed to be easy to use and easy to extend.
 ## Installation
 Before proceeding with the installation, make sure you have cloned the repository using the following command:
 ```
