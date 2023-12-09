@@ -1,4 +1,4 @@
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MaxLupey/TMining/blob/main/LICENSE)
 # TextMining
 A repository for https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3699403
 
