@@ -31,6 +31,7 @@ class App:
     validate(dataset_path, model_path, x, y, size) :
         Validates the accuracy and f1 of a trained model.
     """
+    model_not_found_constant = "Model file not found."
 
     def __init__(self):
         """
@@ -151,7 +152,7 @@ class App:
             pipeline = joblib.load(model_path)
             return pipeline.predict([text])
         else:
-            raise FileNotFoundError("Model file not found.")
+            raise FileNotFoundError(App.model_not_found_constant)
 
     @staticmethod
     def visualize(model_path: str, text: str, class_names: str = 'Mostly unreliable, Mostly reliable', num_features=40):
@@ -203,7 +204,7 @@ class App:
             exp = explainer.explain_instance(str(text), pipeline.predict_proba, num_features=num_features)
             return exp.as_html()
         else:
-            raise FileNotFoundError("Model file not found.")
+            raise FileNotFoundError(App.model_not_found_constant)
 
     @staticmethod
     def validate(dataset_path, model_path, x, y, size):
@@ -233,6 +234,8 @@ class App:
         This method reads the dataset from the provided path, splits it into training and test sets, and validates the
         accuracy and f1-score of a pre-trained model on the test set. It prints and returns the accuracy and f1-score.
         """
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(App.model_not_found_constant)
         data_x, data_y = read_postprocessing(dataset_path, x, y)
         from sklearn.metrics import f1_score, accuracy_score
         from sklearn.model_selection import ShuffleSplit
