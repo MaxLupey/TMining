@@ -48,11 +48,7 @@ In total, we used three datasets:
 ## Training
 Trains a machine learning model using the provided dataset and saves it to a file.
 ```bash
- python main.py train -dataset_path <path_to_dataset> -x [data_x] -y [data_y] [-size size] -save [save_to] -model [model_type] -vectorizer [vectorizer_type] -kfold [kfold] -test_size [test_size]
-```
- `example`: 
- ```
- python main.py train -dataset_path ./data/factcheck.csv [-x text] [-y target] [-save_to ./result] [-model SVC] [-vectorizer TfidfVectorizer] [-kfold 10] [-test_size 0.2]
+python main.py train -dataset_path ./data/factcheck.csv [-x text] [-y target] [-save_to ./result] [-model SVC] [-vectorizer TfidfVectorizer] [-kfold 10] [-test_size 0.2]
 ```
 
 - dataset_path: path to the dataset.
@@ -66,11 +62,7 @@ Trains a machine learning model using the provided dataset and saves it to a fil
 ## Validation
 Validate the model using the provided dataset.
 ```bash
-main.py validate -model_path <path_to_model> -dataset_path <path_to_dataset> -x [data_x] -y [data_y] -size [size]
-```
- `example`: 
-```
- python main.py validate -model_path ./model.mdl -dataset_path ./data/factcheck.csv [-x text] [-y target] [-test_size 0.2]
+python main.py validate -model_path ./model.mdl -dataset_path ./data/factcheck.csv [-x text] [-y target] [-test_size 0.2]
 ```
 
 - model_path: path to the trained model.
@@ -82,11 +74,7 @@ main.py validate -model_path <path_to_model> -dataset_path <path_to_dataset> -x 
 ## Predictions
 Make predictions for input text using our trained model.
 ```bash
-python main.py predict -model_path <path_to_model> -text <text_to_predict>
-```
- `example`: 
-```
- python main.py predict -model_path ./model.mdl -text “fake news text”
+python main.py predict -model_path ./model.mdl -text “fake news text”
 ```
 
 - model_path: path to the trained model.
@@ -94,12 +82,7 @@ python main.py predict -model_path <path_to_model> -text <text_to_predict>
 ## Vizualization
 Generate an HTML visualization of model predictions for a given text input.
 ```bash
-python main.py visualize -model_path <path_to_model> -text <text_to_predict> -features [num_features] -save [save_to]
-```
-
- `example `: 
- ```
- python main.py visualize -model_path ./model.mdl -text “fake news text” [-features 60] [-save_to ./result]
+python main.py visualize -model_path ./model.mdl -text “fake news text” [-features 60] [-save_to ./result]
 ```
 
 - model_path: path to the trained model.
@@ -112,7 +95,6 @@ Run the model as a REST-ful API service for making predictions and visualization
 ```bash
 python main.py host -model_path ./model.mdl [-address 0.0.0.0] [-port 5000]
 ```
- `example `: python main.py host -model_path ./model.mdl
 - model_path: path to the trained model.
 - address: IP address for the API host. Default: 0.0.0.0.
 - port: port for the API host. Default: 5000.
