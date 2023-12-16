@@ -1,0 +1,5 @@
+/qodana.yaml
+/results/*
+/qodana.sarif.json
+.idea/*
+*.pyc
