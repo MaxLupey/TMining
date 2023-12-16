@@ -21,4 +21,4 @@ with open('result.csv', 'w', newline='', encoding='utf-8') as csvfile:
             image_alt = article.find('div', class_='m-statement__content').find('img', class_='c-image__thumb')['alt']
             writer.writerow({'text': article_text, 'target': image_alt})
 
-print('The data was successfully written to the result.csv file.')
+print('The data was successfully written to the result.csv file')

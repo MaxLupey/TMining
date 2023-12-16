@@ -17,16 +17,12 @@ class CustomPipeline:
 
     Methods
     -------
-    get_model(name)
+    get_model(name: str)
         Retrieves a specific model based on the provided name.
-    get_vectorizer(name)
+    get_vectorizer(name: str)
         Retrieves a specific vectorizer based on the provided name.
-    create_pipeline(model_name, vectorizer_name)
+    create_pipeline(model_name: str, vectorizer_name: str)
         Creates a pipeline by combining a specified model and vectorizer.
-
-    Usage
-    -----
-    Initialize an instance of CustomPipeline to access its methods for model and vectorizer retrieval, and creating pipelines for text data processing with machine learning models.
     """
     def __init__(self, max_iter=20000, max_features=1000, kernel='linear'):
         """
@@ -42,9 +38,9 @@ class CustomPipeline:
             Kernel to use for the SVC model. Default is 'linear'.
         """
         self.models = {
-            'SVC': SVC(kernel=kernel, probability=True, cache_size=200, max_iter=max_iter),
-            'SVR': SVR(kernel=kernel, max_iter=max_iter, C=1.0, epsilon=0.2),
-            'LogisticRegression': LogisticRegression(max_iter=max_iter, n_jobs=-1)
+            'SVC': SVC(kernel=kernel, probability=True, cache_size=200, max_iter=max_iter, verbose=True),
+            'SVR': SVR(kernel=kernel, max_iter=max_iter, C=1.0, epsilon=0.2, verbose=True),
+            'LogisticRegression': LogisticRegression(max_iter=max_iter, n_jobs=-1, verbose=True)
         }
 
         self.vectorizers = {
@@ -53,7 +49,7 @@ class CustomPipeline:
             'HashingVectorizer': HashingVectorizer(n_features=max_features)
         }
 
-    def get_model(self, name):
+    def get_model(self, name: str):
         """
         Get the specified model from the available models.
 
@@ -68,11 +64,10 @@ class CustomPipeline:
             The requested model object.
         """
         if name not in self.models:
-            print(f"Model with name '{name}' not found.")
-            return None
+            raise ValueError(f"Model with name '{name}' not found.")
         return self.models[name]
 
-    def get_vectorizer(self, name):
+    def get_vectorizer(self, name: str):
         """
         Get the specified vectorizer from the available vectorizers.
 
@@ -87,8 +82,7 @@ class CustomPipeline:
             The requested vectorizer object.
         """
         if name not in self.vectorizers:
-            print(f"Vectorizer with name '{name}' not found.")
-            return None
+            raise ValueError(f"Vectorizer with name '{name}' not found.")
         return self.vectorizers[name]
 
     def create_pipeline(self, model_name: str, vectorizer_name: str):
@@ -107,13 +101,6 @@ class CustomPipeline:
         sklearn Pipeline
             The created pipeline object.
         """
-        if model_name not in self.models:
-            print(f"Model with name '{model_name}' not found.")
-            return None
-        if vectorizer_name not in self.vectorizers:
-            print(f"Vectorizer with name '{vectorizer_name}' not found.")
-            return None
-
         model = self.get_model(model_name)
         vectorizer = self.get_vectorizer(vectorizer_name)
 
