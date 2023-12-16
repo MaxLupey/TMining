@@ -1,5 +1,8 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MaxLupey_TMining&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MaxLupey_TMining)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MaxLupey/TMining/blob/main/LICENSE)
+
+TMining repository for text mining [scientific papers](https://scholar.google.com/citations?hl=en&user=8_OPWxAAAAAJ)
+
 # TMining
 TMining is a Python library designed for text analysis and sentiment detection, leveraging the powerful scikit-learn library for simplicity and extensibility. Additionally, this repository is specifically crafted to detect fake news based on a developed model.
 
