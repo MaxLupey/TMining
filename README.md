@@ -1,7 +1,7 @@
 [![codecov](https://codecov.io/gh/MaxLupey/TMining/graph/badge.svg?token=V7V942KO1A)](https://codecov.io/gh/MaxLupey/TMining)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=MaxLupey_TMining&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=MaxLupey_TMining)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MaxLupey/TMining/blob/main/LICENSE)
-
+[![CodeQL](https://github.com/MichaelCurrin/badge-generator/workflows/CodeQL/badge.svg)](https://github.com/MaxLupey/TMining/actions?query=workflow%3ACodeQL "Code quality workflow status")
 
 A repository for text mining [scientific](https://scholar.google.com/citations?hl=en&user=8_OPWxAAAAAJ) research. This app is suitable for text mining research like news reliability, authorship, and unique text style detection.
 
