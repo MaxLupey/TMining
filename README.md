@@ -129,5 +129,6 @@ GET http://localhost:5000/model/visualize?text=This is a test
 ```
 <img width="1237" alt="image" src="https://github.com/MaxLupey/TextMining/assets/55431857/d33c48fd-97ed-4efc-a4de-ec73a9613b1b">
 
+![data-science-methodology](https://github.com/MaxLupey/TMining/assets/55431857/5543f7ba-a4b6-4606-bc1e-06f4d87a1a25)
 
 
