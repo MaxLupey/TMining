@@ -7,7 +7,7 @@
 A repository for text mining [scientific](https://scholar.google.com/citations?hl=en&user=8_OPWxAAAAAJ) research. This app is suitable for text mining research like news reliability (fake news) detection, authorship, and unique text style detection.
 
 
-![data-science-methodology](https://github.com/MaxLupey/TMining/assets/55431857/5543f7ba-a4b6-4606-bc1e-06f4d87a1a25)
+(![data-science-methodology](https://github.com/MaxLupey/TMining/assets/55431857/5543f7ba-a4b6-4606-bc1e-06f4d87a1a25))[https://www.credly.com/badges/4c0e6310-261c-4a24-a38d-0b8edc8d125d/public_url]
 
 # TMining
 TMining is a Python library designed for text analysis and sentiment detection, leveraging the powerful scikit-learn library for simplicity and extensibility. Additionally, this repository is specifically crafted to detect fake news based on a developed model.
