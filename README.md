@@ -4,7 +4,7 @@
 [![CodeQL](https://github.com/MichaelCurrin/badge-generator/workflows/CodeQL/badge.svg)](https://github.com/MaxLupey/TMining/actions?query=workflow%3ACodeQL "Code quality workflow status")
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/MaxLupey/TMining/runTest.yml?logo=github&label=Python%20tests&link=https%3A%2F%2Fgithub.com%2FMaxLupey%2FTMining%2Factions)](https://github.com/MaxLupey/TMining/actions)
 
-A repository for text mining [scientific](https://scholar.google.com/citations?hl=en&user=8_OPWxAAAAAJ) research. This app is suitable for text mining research like news reliability, authorship, and unique text style detection.
+A repository for text mining [scientific](https://scholar.google.com/citations?hl=en&user=8_OPWxAAAAAJ) research. This app is suitable for text mining research like news reliability (fake news) detection, authorship, and unique text style detection.
 
 # TMining
 TMining is a Python library designed for text analysis and sentiment detection, leveraging the powerful scikit-learn library for simplicity and extensibility. Additionally, this repository is specifically crafted to detect fake news based on a developed model.
