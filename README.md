@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MaxLupey/TMining/blob/main/LICENSE)
 [![CodeQL](https://github.com/MichaelCurrin/badge-generator/workflows/CodeQL/badge.svg)](https://github.com/MaxLupey/TMining/actions?query=workflow%3ACodeQL "Code quality workflow status")
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/MaxLupey/TMining/runTest.yml?logo=github&label=Python%20tests&link=https%3A%2F%2Fgithub.com%2FMaxLupey%2FTMining%2Factions)](https://github.com/MaxLupey/TMining/actions)
+![data-science-methodology](https://github.com/MaxLupey/TMining/assets/55431857/5543f7ba-a4b6-4606-bc1e-06f4d87a1a25)
 
 A repository for text mining [scientific](https://scholar.google.com/citations?hl=en&user=8_OPWxAAAAAJ) research. This app is suitable for text mining research like news reliability (fake news) detection, authorship, and unique text style detection.
 
@@ -128,7 +129,5 @@ Example:
 GET http://localhost:5000/model/visualize?text=This is a test
 ```
 <img width="1237" alt="image" src="https://github.com/MaxLupey/TextMining/assets/55431857/d33c48fd-97ed-4efc-a4de-ec73a9613b1b">
-
-![data-science-methodology](https://github.com/MaxLupey/TMining/assets/55431857/5543f7ba-a4b6-4606-bc1e-06f4d87a1a25)
 
 
