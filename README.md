@@ -130,6 +130,6 @@ Example:
 ```
 GET http://localhost:5000/model/visualize?text=This is a test
 ```
-<img width="1237" alt="image" src="https://github.com/MaxLupey/TextMining/assets/55431857/d33c48fd-97ed-4efc-a4de-ec73a9613b1b">
+<img width="1237" alt="image" src="https://github.com/MaxLupey/TMining/assets/55431857/d33c48fd-97ed-4efc-a4de-ec73a9613b1b">
 
 
