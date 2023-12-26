@@ -133,4 +133,4 @@ GET http://localhost:5000/model/visualize?text=This is a test
 
 <img width="1237" alt="291001908-d33c48fd-97ed-4efc-a4de-ec73a9613b1b" src="https://github.com/MaxLupey/TMining/assets/55431857/ea18dd82-c788-4801-a125-4abc9b193cfb">
 
-
+Feel free to add your features requests https://github.com/MaxLupey/TMining/issues
